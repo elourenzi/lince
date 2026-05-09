@@ -1,0 +1,12 @@
+# Lince / Watcher Dashboard has no Python package dependencies.
+#
+# This repository is a Node.js app with separate backend and frontend
+# package manifests under watcher-dashboard/backend and watcher-dashboard/frontend.
+#
+# Server prerequisites:
+# - Node.js 20+ and npm 10+ for manual installs/builds, or
+# - Docker Engine 24+ with the Docker Compose plugin for docker compose up --build.
+#
+# Do not add Node packages here. They are pinned in:
+# - watcher-dashboard/backend/package-lock.json
+# - watcher-dashboard/frontend/package-lock.json
