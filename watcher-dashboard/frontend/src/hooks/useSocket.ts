@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 import { SystemState } from '../types';
 
-const BACKEND_URL = 'http://localhost:3001';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || window.location.origin;
 
 export function useSocket() {
   const [state, setState] = useState<SystemState>({ inbox: [], running: [], done: [], failed: [] });
